@@ -1,0 +1,48 @@
+:root {
+    /* 滚动条宽度 */
+    --scrollbar-width: 10px;
+    /* 滚动条轨道背景颜色 */
+    --track-color: #ffffff;
+    /* 滑块颜色 */
+    --thumb-color: #d4d4d4;
+    /* 滑块悬停颜色 */
+    --thumb-haver-color: #b4b2b2;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* 整个滚动条 */
+::-webkit-scrollbar {
+    /* 垂直滚动条宽度 */
+    width: var(--scrollbar-width);
+    /* 水平滚动条高度 */
+    height: var(--scrollbar-width);
+}
+
+
+/* 滚动条轨道（背景） */
+::-webkit-scrollbar-track {
+    background: var(--track-color);
+    border-radius: 6px;
+}
+
+/* 滚动条滑块 */
+::-webkit-scrollbar-thumb {
+    background: var(--thumb-color);
+    border-radius: 6px;
+    /* 用边框制造间隔效果 */
+    border: 1px solid var(--thumb-color);
+}
+
+/* 滑块悬停状态 */
+::-webkit-scrollbar-thumb:hover {
+    background: var(--thumb-haver-color);
+}
+
+/* 滚动条按钮（上下箭头）*/
+::-webkit-scrollbar-button {
+    /* 隐藏默认箭头 */
+    display: none;
+}
